@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jardín del frente — preguntas</title>
+<style>
+  :root{
+    --ink:#1c1a17; --soft:#5d574e; --line:#e3ddd3; --card:#fffdf9;
+    --leaf:#2f6b3a; --leaf-soft:#eaf3ea; --sun:#c8720f; --bg:#f4f1ea;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       font-size:19px;line-height:1.55;-webkit-text-size-adjust:100%}
+  .wrap{max-width:820px;margin:0 auto;padding:20px 16px 140px}
+  header{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;margin-bottom:18px}
+  h1{font-size:1.45rem;margin:0 0 8px;line-height:1.3}
+  .lede{margin:0;color:var(--soft);font-size:1rem}
+  .how{margin:14px 0 0;padding:14px 16px;background:var(--leaf-soft);border-radius:14px;font-size:.98rem}
+  .how b{color:var(--leaf)}
+  h2{font-size:1.12rem;margin:30px 0 12px;color:var(--sun);letter-spacing:.02em}
+  .q{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 18px 16px;margin-bottom:14px}
+  .q .num{display:inline-block;background:var(--ink);color:#fff;font-weight:700;font-size:.82rem;
+           border-radius:8px;padding:2px 9px;margin-right:9px;vertical-align:2px}
+  .q p{margin:0 0 12px}
+  .q .hint{color:var(--soft);font-size:.92rem;margin:6px 0 10px}
+  input[type=text],textarea,select{
+    width:100%;font:inherit;font-size:1rem;padding:12px 13px;border:1.5px solid var(--line);
+    border-radius:11px;background:#fff;color:var(--ink)}
+  input[type=text]:focus,textarea:focus,select:focus{outline:2px solid var(--leaf);border-color:var(--leaf)}
+  textarea{min-height:74px;resize:vertical}
+  .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+  .sw{display:inline-flex;align-items:center;gap:9px;border:1.5px solid var(--line);background:#fff;
+      border-radius:999px;padding:9px 18px;font-size:1rem;cursor:pointer;user-select:none}
+  .sw input{width:20px;height:20px;accent-color:var(--leaf);margin:0}
+  .sw.on{border-color:var(--leaf);background:var(--leaf-soft)}
+  .imgbox{background:#fff;border:1px solid var(--line);border-radius:16px;padding:12px;margin-bottom:18px}
+  .imgbox h3{margin:2px 0 10px;font-size:1rem;color:var(--soft);font-weight:600}
+  .imgbox img{width:100%;height:auto;display:block;border-radius:9px;border:1px solid var(--line)}
+  details{margin-top:6px}
+  summary{cursor:pointer;color:var(--leaf);font-size:.95rem;padding:6px 0}
+  table{width:100%;border-collapse:collapse;font-size:.97rem}
+  th,td{text-align:left;padding:9px 7px;border-bottom:1px solid var(--line);vertical-align:middle}
+  th{font-size:.82rem;text-transform:uppercase;letter-spacing:.04em;color:var(--soft)}
+  td.n input{width:74px;text-align:center}
+  td.z select{padding:9px 8px;font-size:.95rem}
+  .bar{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);
+       padding:12px 16px calc(12px + env(safe-area-inset-bottom));box-shadow:0 -6px 22px rgba(0,0,0,.07)}
+  .bar .inner{max-width:820px;margin:0 auto;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  button{font:inherit;font-weight:600;font-size:1rem;border-radius:13px;padding:14px 20px;border:0;cursor:pointer}
+  .primary{background:var(--leaf);color:#fff;flex:1 1 210px}
+  .ghost{background:#fff;color:var(--ink);border:1.5px solid var(--line)}
+  .note{font-size:.86rem;color:var(--soft);flex:1 1 100%;margin:0}
+  .out{display:none;margin-top:16px}
+  .out textarea{min-height:230px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.86rem}
+  .ok{background:var(--leaf-soft);color:var(--leaf);border-radius:11px;padding:11px 14px;font-size:.95rem;font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Jardín del frente — unas preguntas</h1>
+    <p class="lede">Para poder dibujar el jardín exactamente como usted lo quiere. Toma unos 5 minutos.</p>
+    <div class="how">
+      <b>Cómo funciona:</b>
+      <ul style="margin:8px 0 0;padding-left:20px">
+        <li>El <b>plano</b> y su <b>croquis</b> están abajo — puede mirarlos cuando quiera.</li>
+        <li>Conteste lo que pueda. Si algo no lo sabe, déjelo en blanco.</li>
+        <li>Al final, toque <b>«Compartir respuestas»</b> y mándelas por WhatsApp.</li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="imgbox">
+    <h3>Su croquis (volteado para que se lea bien)</h3>
+    <img src="%%SKETCH%%" alt="Croquis del jardín dibujado a mano">
+  </div>
+
+  <div class="imgbox">
+    <h3>El plano que preparé (para que compare)</h3>
+    <img src="%%PLAN%%" alt="Plano aéreo del jardín frontal">
+  </div>
+
+  <h2>A. Las plantas — cuáles exactamente</h2>
+
+  <div class="q">
+    <p><span class="num">1</span><b>¿Cuál es la «palma roja»?</b></p>
+    <p class="hint">En el croquis dice «palma roja», pero no dice cuál. ¿Es la de abanico con el tallo rojizo, o la de tallo rojo brillante y hojas finas? ¿O es otra?</p>
+    <input type="text" id="q1" placeholder="Escriba el nombre, o descríbala">
+  </div>
+
+  <div class="q">
+    <p><span class="num">2</span><b>«Ave de paraíso»: ¿blanca, naranja, o las dos?</b></p>
+    <p class="hint">La naranja es bajita. La blanca es grande, tipo platanillo.</p>
+    <div class="row">
+      <label class="sw"><input type="checkbox" id="q2_a" data-lbl="naranja (bajita)"> Naranja</label>
+      <label class="sw"><input type="checkbox" id="q2_b" data-lbl="blanca (grande)"> Blanca</label>
+    </div>
+    <input type="text" id="q2_c" style="margin-top:10px" placeholder="¿Cuántas de cada una?">
+  </div>
+
+  <div class="q">
+    <p><span class="num">3</span><b>«Palma raphis» y «Palma Quico» (o Queca)</b></p>
+    <p class="hint">¿Es la misma palma o son dos diferentes?</p>
+    <select id="q3_a">
+      <option value="">— escoja —</option>
+      <option>Es la misma palma</option>
+      <option>Son dos palmas diferentes</option>
+      <option>No estoy segura</option>
+    </select>
+    <input type="text" id="q3_b" style="margin-top:10px" placeholder="Si son dos, escriba el nombre de cada una">
+  </div>
+
+  <div class="q">
+    <p><span class="num">4</span><b>Dos palabras que no pude leer</b></p>
+    <p class="hint">(a) una que empieza con «w», cerca de «palma raphis» · (b) el renglón de abajo, cortado, que parece decir «casa de madera».</p>
+    <input type="text" id="q4_a" placeholder="(a) la palabra que empieza con w — ¿qué dice?">
+    <input type="text" id="q4_b" style="margin-top:10px" placeholder="(b) el renglón de abajo — ¿qué quería decir?">
+  </div>
+
+  <div class="q">
+    <p><span class="num">5</span><b>«Elemento cobertura» y «elemento cobertor»</b></p>
+    <p class="hint">¿Qué significa eso? ¿Es el cubresuelo de la franja del frente?</p>
+    <input type="text" id="q5" placeholder="Explique brevemente">
+  </div>
+
+  <div class="q">
+    <p><span class="num">6</span><b>Confirme estas cinco</b></p>
+    <p class="hint">Las leí claras en su croquis. Marque las que sí quiere.</p>
+    <div class="row">
+      <label class="sw"><input type="checkbox" id="q6_heliconia" data-lbl="heliconia"> Heliconia</label>
+      <label class="sw"><input type="checkbox" id="q6_monstera" data-lbl="monstera"> Monstera</label>
+      <label class="sw"><input type="checkbox" id="q6_alocasia" data-lbl="oreja de elefante (Alocasia)"> Oreja de elefante</label>
+      <label class="sw"><input type="checkbox" id="q6_philo" data-lbl="philodendron hope"> Philodendron «hope»</label>
+      <label class="sw"><input type="checkbox" id="q6_dichondra" data-lbl="dichondra (cubresuelo)"> Dichondra</label>
+    </div>
+  </div>
+
+  <div class="q">
+    <p><span class="num">7</span><b>Estas tres no están en su croquis</b></p>
+    <p class="hint">Están en mi plano. Dígame cuáles quiere de verdad.</p>
+    <div class="row">
+      <label class="sw"><input type="checkbox" id="q7_queso" data-lbl="palma queso (Coccothrinax)"> Palma queso</label>
+      <label class="sw"><input type="checkbox" id="q7_areca" data-lbl="palma areca"> Palma areca</label>
+      <label class="sw"><input type="checkbox" id="q7_navidad" data-lbl="palma de Navidad / Manila (Veitchia)"> Palma de Navidad</label>
+    </div>
+    <input type="text" id="q7_note" style="margin-top:10px" placeholder="¿Alguna de estas es la que escribió como «Palma Quico» o «wilicenas»?">
+  </div>
+
+  <h2>B. Dónde va cada una</h2>
+
+  <div class="q">
+    <p><span class="num">8</span><b>¿Cuántas y en qué parte?</b></p>
+    <p class="hint">Ponga la cantidad y escoja dónde va. Si una no la quiere, escoja «no la quiero».</p>
+    <table>
+      <thead><tr><th>Planta</th><th>Cant.</th><th>¿Dónde?</th></tr></thead>
+      <tbody id="grid"></tbody>
+    </table>
+  </div>
+
+  <div class="q">
+    <p><span class="num">9</span><b>¿Hay un muro de piedra?</b></p>
+    <p class="hint">En el croquis dice «muro en piedra». ¿Dónde va y qué alto?</p>
+    <input type="text" id="q9" placeholder="Dónde y qué alto (en pies)">
+  </div>
+
+  <div class="q">
+    <p><span class="num">10</span><b>¿Algo de lo que ya está se queda?</b></p>
+    <p class="hint">La palma del lado izquierdo, las enredaderas, algo del patio… ¿o se siembra todo nuevo?</p>
+    <textarea id="q10"></textarea>
+  </div>
+
+  <div class="q">
+    <p><span class="num">11</span><b>¿La verja de ciclón se queda?</b></p>
+    <div class="row">
+      <label class="sw"><input type="checkbox" id="q11_a" data-lbl="la verja se queda"> Se queda</label>
+      <label class="sw"><input type="checkbox" id="q11_b" data-lbl="el muro de piedra la sustituye"> La sustituye el muro</label>
+    </div>
+  </div>
+
+  <h2>C. Cuánto y qué tamaño</h2>
+
+  <div class="q">
+    <p><span class="num">12</span><b>Los anchos que usé (3, 4.5, 6 y 9 pies)</b></p>
+    <p class="hint">¿Son lo que ocupa la planta, o el largo del cantero donde va?</p>
+    <select id="q12">
+      <option value="">— escoja —</option>
+      <option>Es lo que ocupa la planta</option>
+      <option>Es el largo del cantero</option>
+      <option>Depende de la planta</option>
+    </select>
+  </div>
+
+  <div class="q">
+    <p><span class="num">13</span><b>Las 6 macetas</b></p>
+    <p class="hint">¿De qué tamaño son, y dónde van?</p>
+    <input type="text" id="q13" placeholder="Tamaño y lugar">
+  </div>
+
+  <div class="q">
+    <p><span class="num">14</span><b>¿Cuánto del cantero es dichondra?</b></p>
+    <select id="q14">
+      <option value="">— escoja —</option>
+      <option>Todo el cantero del frente</option>
+      <option>Solo entre las plantas</option>
+      <option>Solo la franja de al lado de la calle</option>
+    </select>
+  </div>
+
+  <h2>D. El marco del jardín</h2>
+
+  <div class="q">
+    <p><span class="num">15</span><b>Medidas</b></p>
+    <p class="hint">¿El frente del jardín es 30 pies de ancho por 10 pies de fondo? ¿Y el «5» que está escrito en el croquis qué es?</p>
+    <input type="text" id="q15" placeholder="Confirme las medidas, o corríjalas">
+  </div>
+
+  <div class="q">
+    <p><span class="num">16</span><b>¿Hacia dónde da el frente de la casa?</b></p>
+    <p class="hint">Esto define las sombras del dibujo.</p>
+    <select id="q16">
+      <option value="">— escoja —</option>
+      <option>Sol de la mañana</option>
+      <option>Sol de la tarde</option>
+      <option>Sol todo el día</option>
+      <option>Bastante sombra</option>
+    </select>
+    <input type="text" id="q16_b" style="margin-top:10px" placeholder="¿Norte, sur, este u oeste? (si lo sabe)">
+  </div>
+
+  <div class="q">
+    <p><span class="num">17</span><b>¿Algo que quiera y no esté en mi plano?</b></p>
+    <textarea id="q17" placeholder="Escriba libremente"></textarea>
+  </div>
+
+  <div class="out" id="out">
+    <div class="ok" id="okmsg">Listo. Ahora toque «Compartir respuestas» y mándelas por WhatsApp.</div>
+    <details>
+      <summary>Ver las respuestas escritas</summary>
+      <textarea id="dump" readonly></textarea>
+    </details>
+  </div>
+
+</div>
+
+<div class="bar">
+  <div class="inner">
+    <button class="primary" id="share">Compartir respuestas</button>
+    <button class="ghost" id="copy">Copiar</button>
+    <p class="note" id="status">No se envía nada solo. Usted decide cuándo mandarlo.</p>
+  </div>
+</div>
+
+<script>
+const SPECIES = [
+  "Palma raphis (Rhapis)",
+  "Palma roja (por confirmar cuál)",
+  "Palma Quico / Queca (por confirmar)",
+  "Ave de paraíso",
+  "Heliconia",
+  "Monstera",
+  "Oreja de elefante (Alocasia)",
+  "Philodendron «hope»",
+  "Palma queso (Coccothrinax)",
+  "Palma areca",
+  "Palma de Navidad (Veitchia)",
+  "Dichondra (cubresuelo)",
+  "Macetas (6)"
+];
+const ZONES = ["junto a la pared","detrás de la pared derecha","verja izquierda",
+  "cantero central del frente","franja de la calle","en maceta","no la quiero"];
+
+const grid = document.getElementById("grid");
+SPECIES.forEach((s,i)=>{
+  const tr = document.createElement("tr");
+  tr.innerHTML = `<td>${s}</td>
+    <td class="n"><input type="text" inputmode="numeric" id="c${i}" placeholder="0"></td>
+    <td class="z"><select id="z${i}"><option value="">—</option>${ZONES.map(z=>`<option>${z}</option>`).join("")}</select></td>`;
+  grid.appendChild(tr);
+});
+
+// toggles: keep the pill highlighted when on
+document.querySelectorAll(".sw input").forEach(cb=>{
+  const sync = ()=>cb.closest(".sw").classList.toggle("on", cb.checked);
+  cb.addEventListener("change", sync); sync();
+});
+
+function on(id){const e=document.getElementById(id);return e&&e.checked}
+function val(id){const e=document.getElementById(id);return e?(e.value||"").trim():""}
+function picked(prefix){
+  const out=[];
+  document.querySelectorAll(`[id^="${prefix}"]`).forEach(cb=>{
+    if(cb.type==="checkbox"&&cb.checked&&cb.dataset.lbl) out.push(cb.dataset.lbl);
+  });
+  return out.join(", ");
+}
+function orDash(s){return s? s : "(sin contestar)"}
+
+function compose(){
+  const L=[];
+  L.push("JARDÍN DEL FRENTE — RESPUESTAS");
+  L.push("");
+  L.push("A. LAS PLANTAS");
+  L.push("1. Palma roja es: "+orDash(val("q1")));
+  let q2=picked("q2_"); if(val("q2_c")) q2+= (q2?" — ":"")+val("q2_c");
+  L.push("2. Ave de paraíso: "+orDash(q2));
+  L.push("3. Raphis vs Quico: "+orDash(val("q3_a"))+(val("q3_b")?" — "+val("q3_b"):""));
+  L.push("4. Palabras ilegibles: (a) "+orDash(val("q4_a"))+" (b) "+orDash(val("q4_b")));
+  L.push("5. Elemento cobertura: "+orDash(val("q5")));
+  L.push("6. Confirmadas: "+orDash(picked("q6_")));
+  L.push("7. De las tres: "+orDash(picked("q7_"))+(val("q7_note")?" — "+val("q7_note"):""));
+  L.push("");
+  L.push("B. DÓNDE");
+  const rows=[];
+  SPECIES.forEach((s,i)=>{
+    const c=val("c"+i), z=val("z"+i);
+    if(c||z) rows.push("   - "+s+": "+(c?c+" u.":"?")+(z?" / "+z:""));
+  });
+  L.push("8. Cantidad y lugar:");
+  L.push(rows.length?rows.join("\n"):"   (sin contestar)");
+  L.push("9. Muro de piedra: "+orDash(val("q9")));
+  L.push("10. Ya está y se queda: "+orDash(val("q10")));
+  L.push("11. Verja: "+orDash(picked("q11_")));
+  L.push("");
+  L.push("C. TAMAÑO");
+  L.push("12. Anchos de 3/4.5/6/9 pies son: "+orDash(val("q12")));
+  L.push("13. Macetas: "+orDash(val("q13")));
+  L.push("14. Dichondra: "+orDash(val("q14")));
+  L.push("");
+  L.push("D. EL MARCO");
+  L.push("15. Medidas: "+orDash(val("q15")));
+  L.push("16. Orientación/sol: "+orDash(val("q16"))+(val("q16_b")?" — "+val("q16_b"):""));
+  L.push("17. Algo más: "+orDash(val("q17")));
+  return L.join("\n");
+}
+
+const out=document.getElementById("out"), dump=document.getElementById("dump"), status=document.getElementById("status");
+
+document.getElementById("share").addEventListener("click", async ()=>{
+  const text=compose();
+  dump.value=text; out.style.display="block";
+  try{
+    if(navigator.share){ await navigator.share({title:"Jardín del frente — respuestas", text}); status.textContent="Listo — escoja WhatsApp y a quién se lo manda."; }
+    else { await navigator.clipboard.writeText(text); status.textContent="Copiado. Péguelo en WhatsApp."; }
+  }catch(e){
+    try{ await navigator.clipboard.writeText(text); status.textContent="Copiado. Péguelo en WhatsApp."; }
+    catch(_){ status.textContent="Toque «Ver las respuestas escritas» y cópielas a mano."; }
+  }
+});
+
+document.getElementById("copy").addEventListener("click", async ()=>{
+  const text=compose();
+  dump.value=text; out.style.display="block";
+  try{ await navigator.clipboard.writeText(text); status.textContent="Copiado. Péguelo en WhatsApp."; }
+  catch(_){ status.textContent="Toque «Ver las respuestas escritas» y cópielas a mano."; }
+});
+</script>
+</body>
+</html>
